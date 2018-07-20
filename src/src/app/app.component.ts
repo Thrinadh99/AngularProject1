@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name: string = 'Angular 6';
+  title: string = 'Angualar buy Git';
 
   constructor() {
   }
