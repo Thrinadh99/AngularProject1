@@ -1,0 +1,4 @@
+[
+  {"id": 1, "name": "Rahul", "designation": "Software Engineer", "gender": "Male", "company": "TechM", "annualSalary": 60000},
+  {"id": 2, "name": "Thrinadh", "designation": "Software Engineer", "gender": "Male", "company": "TechM", "annualSalary": 55000}
+]
