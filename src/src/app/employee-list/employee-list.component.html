@@ -1,0 +1,21 @@
+<h1>Employees List:</h1>
+<table border="1" cellpadding="5px" cellspacing="1px">
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Designation</th>
+    <th>Gender</th>
+    <th>Company</th>
+    <th>Annual Salary</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employees">
+    <td><a [routerLink]="['/employee', employee.id]">{{ employee.id }}</a></td>
+    <td>{{ employee.name }}</td>
+    <td>{{ employee.designation }}</td>
+    <td>{{ employee.gender }}</td>
+    <td>{{ employee.company }}</td>
+    <td>{{ employee.annualSalary }}</td>  
+  </tr>
+  </tbody>
+</table>

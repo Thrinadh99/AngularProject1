@@ -1,0 +1,39 @@
+<h1>JSON Data List:</h1>
+<table border="1" cellpadding="5px" cellspacing="1px">
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Company</th>
+  </thead>
+  <tbody>
+  <tr>
+    <td colspan="8" *ngIf="!users">Loading Users Data. Please wait...</td>
+  </tr>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.website }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        Street: {{ user.address.street }}<br />
+        Suite: {{ user.address.suite }}<br />
+        City: {{ user.address.city }}<br />
+        Zip Code: {{ user.address.zipcode }}<br />
+        Geo Lat: {{ user.address.geo.lat }}<br />
+        Geo Long: {{ user.address.geo.lng }}<br />
+      </td>
+      <td>
+        Name: {{ user.company.name }}<br />
+        CatchPhrase: {{ user.company.catchPhrase | stylify:10 }}<br />
+        BS: {{ user.company.bs }}<br />
+      </td>
+    </tr>
+  </tbody>
+</table>

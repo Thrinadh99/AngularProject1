@@ -1,0 +1,10 @@
+table {
+  border-collapse: collapse;
+}
+table th {
+  background-color:  dodgerblue;
+  color: #fff;
+}
+h1 {
+  font-family: 'Lato';
+}
